@@ -32,7 +32,7 @@ fs.readdir(folderPath, (err, files) => {
             },
           };
 
-          const xml = new Builder({ standalone: false }).buildObject(xmlObject);
+          const xml = new Builder().buildObject(xmlObject);
 
           const repXml = xml.replace(
             `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>`,
